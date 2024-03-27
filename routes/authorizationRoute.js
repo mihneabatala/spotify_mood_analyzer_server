@@ -22,7 +22,7 @@ router.post("/login", async (req, res, next) => {
     const postBody = {
       grant_type: "authorization_code",
       code: code,
-      redirect_uri: "http://localhost:5173/",
+      redirect_uri: "https://spotify-mood.netlify.app/",
     };
 
     const tokenInfo = await axios.post(
